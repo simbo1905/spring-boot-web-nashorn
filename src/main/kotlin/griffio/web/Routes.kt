@@ -25,4 +25,9 @@ public class Routes {
         model.addAttribute("comments", items)
     }
 
+    @RequestMapping(value = "/commentBox.html")
+    fun commentBox(model: Model) {
+        val items = listOf<Comment>()
+        model.addAttribute("comments", items)
+    }
 }
